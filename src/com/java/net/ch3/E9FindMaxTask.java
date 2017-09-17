@@ -17,7 +17,7 @@ public class E9FindMaxTask implements Callable<Integer> {
 
     @Override
     public Integer call() throws Exception {
-        int max = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         for (int i = start; i < end; i++) {
             if (data[i] > max) max = data[i];
         }
