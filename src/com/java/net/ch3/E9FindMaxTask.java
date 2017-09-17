@@ -30,9 +30,9 @@ public class E9FindMaxTask implements Callable<Integer> {
         Random random = new Random();
         for (int i = 0; i < data.length; i++) {
             data[i] = random.nextInt();
-            System.out.print(data[i]);
-            System.out.print(" ");
-            if (i != 0 && i % 50 == 0) System.out.println();
+//            System.out.print(data[i]);
+//            System.out.print(" ");
+//            if (i != 0 && i % 50 == 0) System.out.println();
         }
         System.out.println();
 
@@ -45,5 +45,6 @@ public class E9FindMaxTask implements Callable<Integer> {
         Future<Integer> future2 = service.submit(task2);
 
         System.out.println(Math.max(future1.get(), future2.get()));
+        System.exit(0);
     }
 }
