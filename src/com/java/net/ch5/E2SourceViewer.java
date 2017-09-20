@@ -1,7 +1,6 @@
 package com.java.net.ch5;
 
 import java.io.*;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class E2SourceViewer {
