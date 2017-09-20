@@ -1,7 +1,5 @@
 package com.java.net.ch7;
 
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
