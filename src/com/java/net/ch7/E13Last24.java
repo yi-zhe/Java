@@ -4,6 +4,8 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 public class E13Last24 {
 
@@ -14,6 +16,7 @@ public class E13Last24 {
 
         URL u = new URL("http://www.elharo.com");
         URLConnection uc = u.openConnection();
+//        uc.setRequestProperty("name", "hi");
         System.out.println("Original if modified since " + new Date(uc.getIfModifiedSince()));
         uc.setIfModifiedSince((new Date(today.getTime() - millisecondsPerDay)).getTime());
         System.out.println("Will retrieve file if it's modified since " + new Date(uc.getIfModifiedSince()));
@@ -27,6 +30,10 @@ public class E13Last24 {
             System.out.println();
         }
 
+        // Request Properties
+//        Map<String, List<String>> properties = uc.getRequestProperties();
+//        for (Map.Entry<String, List<String>> entry : properties.entrySet()) {
+//            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+//        }
     }
-
 }
