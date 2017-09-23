@@ -10,7 +10,7 @@ public class E3Time {
     public static void main(String[] args) throws IOException {
         long differenceBetweenEpochs = 2208988800L; // 1900-01-01 00:00:00 ~ 1970-01-01 00:00:00
 
-        try (Socket socket = new Socket("time.nist.gov", 37)) {
+        try (Socket socket = new Socket("localhost", 8090)) {
             socket.setSoTimeout(3000);
 
             InputStream raw = socket.getInputStream();
