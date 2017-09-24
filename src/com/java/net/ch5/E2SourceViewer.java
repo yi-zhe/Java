@@ -8,7 +8,7 @@ public class E2SourceViewer {
     public static void main(String[] args) {
         InputStream in = null;
         try {
-            URL u = new URL("https://www.baidu.com");
+            URL u = new URL("http://127.0.0.1:8090");
             in = u.openStream();
             in = new BufferedInputStream(in);
             Reader reader = new InputStreamReader(in);
