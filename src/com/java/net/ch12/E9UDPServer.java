@@ -39,5 +39,5 @@ public abstract class E9UDPServer implements Runnable {
         }
     }
 
-    protected abstract void respond(DatagramSocket socket, DatagramPacket incoming);
+    protected abstract void respond(DatagramSocket socket, DatagramPacket incoming) throws IOException;
 }
