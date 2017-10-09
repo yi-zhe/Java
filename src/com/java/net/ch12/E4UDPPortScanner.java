@@ -1,4 +1,4 @@
-package com.java.net.ch2;
+package com.java.net.ch12;
 
 import java.net.DatagramSocket;
 import java.net.SocketException;
