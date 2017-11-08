@@ -1,5 +1,8 @@
 package com.java.multithread.ch1;
 
+/**
+ * 代码的执行顺序与代码的调用顺序是无关的
+ */
 public class E1Thread extends Thread {
 
     @Override
